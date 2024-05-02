@@ -1,7 +1,7 @@
 {
   "name": "my-react-app",
   "version": "0.1.0",
-  "homepage": "https://Evggeennniy.github.io/react-gh-pages",
+  "homepage": "https://evggeennniy.github.io/react-gh-pages/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
@@ -18,7 +18,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build -m \"Deploy React app to GitHub Pages\" -r https://github.com/Evggeennniy/react-gh-pages.git"
   },
   "eslintConfig": {
     "extends": [

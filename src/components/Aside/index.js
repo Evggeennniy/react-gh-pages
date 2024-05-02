@@ -1,1 +1,1 @@
-export { Aside } from "./v1/Aside";
+export { Aside } from "./Aside";

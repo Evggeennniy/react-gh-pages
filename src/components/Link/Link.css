@@ -1,13 +1,13 @@
-.nav_link {
-  padding: 10px;
+.nav-link {
+  padding: 15px 20px;
   font-size: 15px;
   font-weight: 600;
   color: black;
 }
 
 .aside-link {
-  padding: 20px;
+  padding: 10px;
   font-size: 17px;
-  font-weight: 600;
+  text-decoration: none;
   color: red;
 }

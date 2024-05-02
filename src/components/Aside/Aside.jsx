@@ -1,21 +1,17 @@
 import "./Aside.css";
-import { List } from "../../List";
-import { Link } from "../../Link";
+import { ColumnList } from "../List";
+import { AsideLink } from "../Link";
 
 export const Aside = function (...props) {
   const asideItems = ["AsideMenu1", "AsideMenu2", "AsideMenu3", "AsideMenu4"];
   return (
     <aside>
       <h2>Asidebar</h2>
-      <List className="nav_list-col-default">
+      <ColumnList>
         {asideItems.map((item) => {
-          return (
-            <Link className="aside-link" href="#">
-              {item}
-            </Link>
-          );
+          return <AsideLink>{item}</AsideLink>;
         })}
-      </List>
+      </ColumnList>
     </aside>
   );
 };

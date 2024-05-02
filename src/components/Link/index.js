@@ -1,1 +1,2 @@
-export { Link } from "./v1/Link";
+export { NavLink } from "./Link";
+export { AsideLink } from "./Link";
