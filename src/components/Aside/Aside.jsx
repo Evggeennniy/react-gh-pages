@@ -9,7 +9,7 @@ export const Aside = function (...props) {
       <h2>Asidebar</h2>
       <ColumnList>
         {asideItems.map((item) => {
-          return <AsideLink>{item}</AsideLink>;
+          return <AsideLink key={item}>{item}</AsideLink>;
         })}
       </ColumnList>
     </aside>

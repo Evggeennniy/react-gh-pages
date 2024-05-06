@@ -9,7 +9,7 @@ export const Header = function (...props) {
       <h2>Header</h2>
       <RowList>
         {headerItems.map((item) => {
-          return <NavLink>{item}</NavLink>;
+          return <NavLink key={item}>{item}</NavLink>;
         })}
       </RowList>
     </header>
