@@ -1,7 +1,7 @@
 import "./Main.css";
 import { Img } from "../Img";
 import { useState } from "react";
-import { arrTabsData } from "../../data";
+import arrTabsData from "../../data";
 
 export const Main = function () {
   let [clickersData, setCount] = useState({});
