@@ -1,1 +1,1 @@
-export { Main } from "./Main";
+export { Main, MainWithFormik } from "./Main";

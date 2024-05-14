@@ -1,7 +1,8 @@
 import "./Main.css";
 import { Img } from "../Img";
 import { useState } from "react";
-import arrTabsData from "../../data";
+import { arrTabsData } from "../../data";
+import { FormFormik } from "../Form";
 
 export const Main = function () {
   let [clickersData, setCount] = useState({});
@@ -45,6 +46,22 @@ export const Main = function () {
       <button className="show-results" onClick={handleShowResults}>
         Show Results
       </button>
+    </main>
+  );
+};
+
+// Створити форму за допомогою форми з наступними полями:
+
+// ім'я, обов'язкове для заповнення;
+// електронна пошта, обов'язкове для заповнення, формат email;
+// телефон, обов'язкове до заповнення, тільки цифри та довжина 12.
+// Провалідувати всі поля і вивести повідомлення у відповідь
+
+export const MainWithFormik = function () {
+  return (
+    <main>
+      <h2>Formik Styled Form</h2>
+      <FormFormik />
     </main>
   );
 };

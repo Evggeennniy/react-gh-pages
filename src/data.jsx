@@ -1,4 +1,4 @@
-const arrTabsData = [
+export const arrTabsData = [
   {
     key: "happy_emoji",
     src: "https://emojiisland.com/cdn/shop/products/Emoji_Icon_-_Happy_large.png?v=1571606093",
@@ -12,5 +12,3 @@ const arrTabsData = [
     src: "https://emojiisland.com/cdn/shop/products/5_large.png?v=1571606116",
   },
 ];
-
-export default arrTabsData;
