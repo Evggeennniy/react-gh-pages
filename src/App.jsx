@@ -1,7 +1,7 @@
 import "./App.css";
 import { Header } from "./components/Header";
 import { Aside } from "./components/Aside";
-import { MainWithFormik } from "./components/Main";
+import { MainWithToDo } from "./components/Main";
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
       <Header />
       <div className="container">
         <Aside />
-        <MainWithFormik />
+        <MainWithToDo />
       </div>
     </div>
   );

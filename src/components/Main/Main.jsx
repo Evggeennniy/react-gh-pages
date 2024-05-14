@@ -3,6 +3,7 @@ import { Img } from "../Img";
 import { useState } from "react";
 import { arrTabsData } from "../../data";
 import { FormFormik } from "../Form";
+import { ToDoList } from "../List";
 
 export const Main = function () {
   let [clickersData, setCount] = useState({});
@@ -62,6 +63,15 @@ export const MainWithFormik = function () {
     <main>
       <h2>Formik Styled Form</h2>
       <FormFormik />
+    </main>
+  );
+};
+
+export const MainWithToDo = function () {
+  return (
+    <main>
+      <h2>TODO app</h2>
+      <ToDoList />
     </main>
   );
 };
