@@ -18,8 +18,8 @@ export const FormFormik = function () {
         .min(3, "Too short name")
         .max(20, "Too long name")
         .required("Required"),
-      phoneNumber: Yup.string() // Использовал из-за ошибки NaN
-        .matches("/^d+$/", "Phone number must contain only digits")
+      phoneNumber: Yup.string()
+        .matches(/^\d+$/, "Phone number must contain only digits") // Исправленное регулярное выражение
         .min(12, "Too short number.")
         .max(12, "Too long number.")
         .required("Required"),
