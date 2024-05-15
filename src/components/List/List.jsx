@@ -35,10 +35,12 @@ export const ToDoList = () => {
     setNewTask(event.target.value);
   };
 
+  const sortedTasks = [...tasks].sort((a, b) => b.isCompleted - a.isCompleted);
+
   return (
     <div>
       <ul>
-        {tasks.map((task) => (
+        {sortedTasks.map((task) => (
           <li
             key={task.id}
             style={{
